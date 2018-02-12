@@ -1,10 +1,9 @@
 # AnaPreto.github.io
-<!DOCTYPE html>
 <html>
   <body>
-    <h1>SITU ORBIS</h1>
-	<h2>Geografia</h2>
-	<h3>Projectos</h3>
-	<h6>Ana Preto</h6>
+    <h1>Ana Preto</h1>
+	<h2>SITU ORBIS</h2>
+	<h3>Geografia</h3>
+	<h6>Projectos</h6>
   </body>
 </html>
