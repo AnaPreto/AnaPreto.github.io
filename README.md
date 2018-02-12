@@ -36,9 +36,9 @@
           })
         ],
         view: new ol.View({
-          center: [40, -8],
+          center: [39, -8],
           projection: projection,
-          zoom: 5,
+          zoom: 6,
           minZoom: 2
         })
       });
