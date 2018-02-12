@@ -19,7 +19,7 @@
         target: 'map',
         view: new ol.View({
           center: [0, 0],
-          zoom: 3
+          zoom: 1
         })
       });
     </script>
