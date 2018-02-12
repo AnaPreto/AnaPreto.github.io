@@ -28,6 +28,6 @@
     <a href="http://www.dgterritorio.pt/" target="_blank">Consultar a página da DGT</a>
 	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cabo_da_Roca_lighthouse.JPG/1200px-Cabo_da_Roca_lighthouse.JPG" alt="Farol do cabo da Roca, visto de Nascente, junto à arriba"/>
     <br/>
-	<a href="https://pt.wikipedia.org/wiki/Esmeraldo_de_Situ_Orbis" target="_blank"/><img src="http://www.bookmybook.pt/images/detailed/4/B1100078.jpg" alt="Fac-similie da capa do Esmeraldo de situ Orbis"/></a>
+	<a href="https://pt.wikipedia.org/wiki/Esmeraldo_de_Situ_Orbis" target="_blank"/><img src="http://www.bookmybook.pt/images/detailed/4/B1100078.jpg" alt="Fac-similie da capa do Esmeraldo de situ Orbis"/>
   </body>
 </html>
