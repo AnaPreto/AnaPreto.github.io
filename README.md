@@ -1,9 +1,6 @@
 # AnaPreto.github.io
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>AP</title>
-  </head>
   <body>
     <h1>SITU ORBIS</h1>
 	<h2>Geografia</h2>
