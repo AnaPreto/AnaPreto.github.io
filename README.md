@@ -1,8 +1,27 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.6.4/build/ol.js"></script>
+  </head>
   <body>
-    <h1>Ana Preto</h1>
-	<h2>SITU ORBIS</h2>
-	<h3>Geografia</h3>
-	<h6>Projectos</h6>
+    <div id="map" class="map"></div>
+    <script>
+      var map = new ol.Map({
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        target: 'map',
+        view: new ol.View({
+          center: [0, 0],
+          zoom: 2
+        })
+      });
+    </script>
   </body>
 </html>
