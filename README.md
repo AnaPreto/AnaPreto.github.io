@@ -36,10 +36,10 @@
           })
         ],
         view: new ol.View({
-          center: [-8, 39],
+          center: [39, -8],
           projection: projection,
-          zoom: 6,
-          minZoom: 2
+          zoom: 5,
+          minZoom: 5
         })
       });
     </script>
