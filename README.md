@@ -38,7 +38,7 @@
         view: new ol.View({
           center: [38, -9],
           projection: projection,
-          zoom: 3,
+          zoom: 5,
           minZoom: 2
         })
       });
