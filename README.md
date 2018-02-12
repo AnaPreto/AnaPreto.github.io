@@ -1,36 +1,29 @@
 <html>
   <head>
-    <title>Tiled ArcGIS MapServer</title>
-    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
-    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-    <script src="https://openlayers.org/en/v4.6.4/build/ol.js"></script>
-  </head>
-  <body>
-    <div id="map" class="map"></div>
+    <title>OpenLayers Demo</title>
+    <style type="text/css">
+      html, body, #basicMap {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+      }
+    </style>
+    <script src="OpenLayers.js"></script>
     <script>
-      var url = 'https://sampleserver1.arcgisonline.com/ArcGIS/rest/services/' +
-          'Specialty/ESRI_StateCityHighway_USA/MapServer';
+      function init() {
+        map = new OpenLayers.Map("basicMap");
+        var mapnik         = new OpenLayers.Layer.OSM();
+        var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
+        var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+        var position       = new OpenLayers.LonLat(13.41,52.52).transform( fromProjection, toProjection);
+        var zoom           = 15; 
 
-      var layers = [
-        new ol.layer.Tile({
-          source: new ol.source.OSM()
-        }),
-        new ol.layer.Tile({
-          extent: [-13884991, 2870341, -7455066, 6338219],
-          source: new ol.source.TileArcGISRest({
-            url: url
-          })
-        })
-      ];
-      var map = new ol.Map({
-        layers: layers,
-        target: 'map',
-        view: new ol.View({
-          center: [-10997148, 4569099],
-          zoom: 4
-        })
-      });
+        map.addLayer(mapnik);
+        map.setCenter(position, zoom );
+      }
     </script>
+  </head>
+  <body onload="init();">
+    <div id="basicMap"></div>
   </body>
 </html>
