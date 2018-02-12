@@ -1,13 +1,9 @@
-<html>
-  <head>
-    <title>OpenLayers Demo</title>
-    <style type="text/css">
-      html, body, #basicMap {
-          width: 100%;
-          height: 100%;
-          margin: 0;
-   </head>
-  <body onload="init();">
-    <div id="basicMap"></div>
-  </body>
-</html>
+<!DOCTYPE HTML>
+<title>OpenLayers Simplest Example</title>
+<div id="demoMap" style="height:250px"></div>
+<script src="OpenLayers.js"></script>
+<script>
+    map = new OpenLayers.Map("demoMap");
+    map.addLayer(new OpenLayers.Layer.OSM());
+    map.zoomToMaxExtent();
+</script>
